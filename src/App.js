@@ -16,7 +16,7 @@ class App extends Component {
     e.preventDefault()
     //if the api isn't called because the application is run from a local server then prefix the link with 'https:cors-anywhere.herokuapp.com/'
     const apiCall = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?query=${recipeName}&addRecipeInformation=true&apiKey=${API_KEY}`
+      `https://api.spoonacular.com/recipes/complexSearch?query=${recipeName}&addRecipeInformation=true&addRecipeInformation=true&apiKey=${API_KEY}`
     )
 
     const data = await apiCall.json()

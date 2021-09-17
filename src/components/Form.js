@@ -1,8 +1,9 @@
 import React from 'react'
+import './form.css'
 
 const Form = (props) => {
   return (
-    <div>
+    <div className='form'>
       <form onSubmit={props.getRecipe}>
         <input type='text' name='recipeName' />
         <button>Search</button>
